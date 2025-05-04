@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+    <div class="container-sm text-center">
+        <h1 class="display-3">Bienvenido a nuestra lista de Tareas</h1>
+
+        <p class="lead">Aquí puedes gestionar tus tareas de manera sencilla y eficiente.</p>
+
+        <hr class="my-4">
+
+        <p class="lead">Para comenzar, por favor inicia sesión o regístrate.</p>
+
+        <div class="d-flex justify-content-center">
+            <a  href="{{url_for('auth.login')}}" class="btn btn-primary mx-2">Iniciar Sesión</a>
+            <a  href="{{url_for('auth.register')}}" class="btn btn-secondary mx-2">Registrarse</a>
+    </div>
+        
+{% endblock %}
